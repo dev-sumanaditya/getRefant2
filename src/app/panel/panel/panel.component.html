@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="brandNav">
+    <h1>GetRefant</h1>
+  </div>
+  <nav class="navbar p1">
+    <div class="content">
+      <a href="/" class="brand" [class.showBrand]="showBrand">
+        <span>GetRefant</span>
+      </a>
+      <div class="navs" [class.positionNav]="showBrand">
+        <a href="/" class="navItem">
+          <span>Home</span>
+          <div class="bar"></div>
+        </a>
+        <a href="/" class="navItem">
+          <span>Tests</span>
+          <div class="bar"></div>
+        </a>
+        <a href="/" class="navItem">
+          <span>Pricing</span>
+          <div class="bar"></div>
+        </a>
+        <a href="/" class="navItem">
+          <span>Blog</span>
+          <div class="bar"></div>
+        </a>
+        <a href="/" class="navItem">
+          <span>Contact</span>
+          <div class="bar"></div>
+        </a>
+      </div>
+      <div class="navs2">
+        <div class="social">
+          <a href="/">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <a href="/">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </div>
+        <a href="/" class="navItem">
+          <span>Login</span>
+        </a>
+        <div class="separator"></div>
+        <a href="/" class="navItem">
+          <span>Sign up</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

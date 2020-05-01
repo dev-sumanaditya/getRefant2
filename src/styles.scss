@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+* {
+  outline: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, .heading {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
+
+// colors
+// royal blue
+.blue {
+  color: #4169e1;
+}
+.blue-bg {
+  background-color: #4169e1;
+}
+//violet
+.violet {
+  color: #7f00ff;
+}
+.violet-bg {
+  background-color: #7f00ff;
+}
+// kelly green
+.green {
+  color: #4cbb17
+}
+.green-bg {
+  background-color: #4cbb17;
+}
+
+
+// padding
+.p1 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}

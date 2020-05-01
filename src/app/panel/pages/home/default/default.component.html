@@ -1,0 +1,13 @@
+<div class="slideCTR">
+  <ngx-slick-carousel class="carousel"
+  #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  >
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide" [style.backgroundImage]="'url('+ slide.image +')'">
+      <div class="content"></div>
+    </div>
+  </ngx-slick-carousel>
+  <div class="left ctrl" (click)="slickModal.slickPrev()"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+  <div class="right ctrl" (click)="slickModal.slickNext()"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+</div>
