@@ -38,11 +38,11 @@
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
           </a>
         </div>
-        <a href="/" class="navItem">
+        <a class="navItem" (click)="modalService.getModal('loginModal').open()">
           <span>Login</span>
         </a>
         <div class="separator"></div>
-        <a href="/" class="navItem">
+        <a class="navItem" (click)="modalService.getModal('signupModal').open()">
           <span>Sign up</span>
         </a>
       </div>
@@ -70,3 +70,67 @@
     </div>
   </div>
 </div>
+
+
+<ngx-smart-modal #loginModal identifier="loginModal" class="modal">
+  <div class="content">
+    <h1>LOG IN</h1>
+
+    <p>Login to explore your dashboard</p>
+    <small>Don't have an account? <a href="" class="x">Sign up</a> here.</small>
+    <div class="inp">
+      <label for="email">Email</label>
+      <input type="text" spellcheck="false" placeholder="Your Email">
+    </div>
+    <div class="inp">
+      <label for="email">Password</label>
+      <input type="password" spellcheck="false" placeholder="Password">
+    </div>
+    <div class="bttm row">
+      <div class="check">
+        <input type="checkbox">
+        <small>Remember Me</small>
+      </div>
+      <small>Forgot Password?</small>
+    </div>
+    <div class="btn row">
+      <button>LOGIN</button>
+    </div>
+  </div>
+</ngx-smart-modal>
+
+<ngx-smart-modal #signupModal identifier="signupModal" class="modal">
+  <div class="content">
+    <h1>SIGN UP</h1>
+
+    <p>Get started with GetRefant</p>
+    <small>Already have an account? <a href="" class="x">Login</a> here.</small>
+    <div class="inp">
+      <label for="email">Email</label>
+      <input type="text" spellcheck="false" placeholder="Your Email">
+    </div>
+    <div class="inp">
+      <label for="email">Password</label>
+      <input type="password" spellcheck="false" placeholder="Password">
+    </div>
+    <div class="inp">
+      <label for="email">Confirm Password</label>
+      <input type="password" spellcheck="false" placeholder="Confirm Password">
+    </div>
+    <div class="bttm row">
+      <div class="check">
+        <input type="checkbox">
+        <small>I have read <a href="" class="x">terms & agreements</a></small>
+      </div>
+    </div>
+    <div class="bttm row">
+      <div class="check">
+        <input type="checkbox">
+        <small>Send me newsletters</small>
+      </div>
+    </div>
+    <div class="btn row">
+      <button>SIGN UP</button>
+    </div>
+  </div>
+</ngx-smart-modal>

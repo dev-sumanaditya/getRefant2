@@ -1,6 +1,9 @@
 import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
+import { NgxSmartModalService } from 'ngx-smart-modal';
+
+
 @Component({
   selector: 'app-panel',
   templateUrl: './panel.component.html',
@@ -14,7 +17,10 @@ export class PanelComponent implements OnInit {
     this.checkScrollTop();
  }
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    public modalService: NgxSmartModalService
+  ) {}
 
   ngOnInit(): void {
   }
