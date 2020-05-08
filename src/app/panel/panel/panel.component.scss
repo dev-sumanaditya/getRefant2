@@ -125,7 +125,29 @@
   }
 }
 
-.outlet {
-  display: flex;
-  flex-direction: column;
+.footer {
+  padding: 20px 5vw;
+  background-color: black;
+  color: white;
+
+  .content {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+
+    .hor {
+      border-bottom: 2px solid rgba(221, 221, 221, 0.3);
+    }
+
+    .bottm {
+      justify-content: space-between;
+      margin-top: 10px;
+      .nav {
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
 }

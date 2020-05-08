@@ -32,7 +32,7 @@ export class DefaultComponent implements OnInit {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3300,
-    dots: true,
+    dots: false,
     fade: false,
     pauseOnHover: false,
     pauseOnDotsHover: true,
