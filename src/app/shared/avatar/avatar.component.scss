@@ -1,0 +1,20 @@
+.container {
+  align-items: center;
+}
+
+img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.text {
+  margin-left: 10px;
+
+  .name {
+    font-weight: 600;
+  }
+  .dt {
+    color: #777;
+    font-size: 12px;
+  }
+}

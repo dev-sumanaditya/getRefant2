@@ -11,16 +11,20 @@ export class DefaultComponent implements OnInit {
   public slides = [
     {
       name: '',
-      image: 'https://d2ct9xspam8wud.cloudfront.net/blog/2019/05/20170646/banner_standard_sizes-1024x525.png'
+      image: '/assets/banner/1.jpg'
     },
     {
       name: '',
-      image: 'https://kinsta.com/wp-content/uploads/2018/09/best-google-fonts.png'
+      image: '/assets/banner/2.jpg'
     },
     {
       name: '',
-      image: 'https://kinsta.com/wp-content/uploads/2018/09/best-google-fonts.png'
+      image: '/assets/banner/3.jpg'
     },
+    {
+      name: '',
+      image: '/assets/banner/4.png'
+    }
   ];
 
   slideConfig = {
@@ -32,9 +36,21 @@ export class DefaultComponent implements OnInit {
     fade: false,
     pauseOnHover: false,
     pauseOnDotsHover: true,
-    speed: 500
+    speed: 500,
+    arrows: false
   };
 
+  public blog = [
+    '/assets/blog/1.jpg',
+    '/assets/blog/2.jpg',
+    '/assets/blog/3.jpg',
+    '/assets/blog/4.jpg',
+    '/assets/blog/5.jpg',
+    '/assets/blog/6.jpg',
+    '/assets/blog/7.jpg',
+    '/assets/blog/8.jpg',
+    '/assets/blog/9.jpg',
+  ];
 
   constructor() { }
 

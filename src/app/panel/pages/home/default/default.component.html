@@ -11,3 +11,26 @@
   <div class="left ctrl" (click)="slickModal.slickPrev()"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
   <div class="right ctrl" (click)="slickModal.slickNext()"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 </div>
+
+<div class="top row p1">
+  <div class="l flex3" [style.background]="'url(https://images.ctfassets.net/cnu0m8re1exe/3dh2xCkH4hm3fZ0ahX2Wrq/ad49d6c701c50670e030196fa2ebda02/Forest-1024x683.jpg?w=650&h=433&fit=fill)'">
+  </div>
+  <div class="r flex2 column">
+    <strong class="blue">Featured</strong>
+    <h1>Some text for the blog</h1>
+    <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+    <app-avatar></app-avatar>
+  </div>
+</div>
+
+<div class="sections row p1">
+  <div class="item column" *ngFor="let i of blog">
+    <div class="img" [style.background]="'url(' + i + ')'"></div>
+    <div class="text">
+      <strong class="blue">TOPIC</strong>
+      <h2>Name of the Blog</h2>
+      <p>The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+    </div>
+    <app-avatar class="avatar"></app-avatar>
+  </div>
+</div>
