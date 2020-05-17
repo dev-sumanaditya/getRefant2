@@ -1,1 +1,21 @@
-<p>etests works!</p>
+<div class="top p1">
+  <div class="wide">
+    <h1>Online Assessment <br> Made Easy</h1>
+    <div class="bar green-bg"></div>
+  </div>
+</div>
+<div class="trending p1">
+  <div class="wide"><div class="head blue-bg">Trending Assessments</div></div>
+  <div class="wide row">
+    <div class="item" *ngFor="let i of trending"><app-testcard></app-testcard></div>
+  </div>
+</div>
+<div class="nav p1">
+  <div class="wide"><div class="head blue-bg">Subjects</div></div>
+  <div class="wide navi row">
+    <div class="item flex1" [class.selected]="selected === i.id" *ngFor="let i of subjects" (click)="selectSubject(i.id)">{{i.name}}</div>
+  </div>
+  <div class="wide row cards">
+    <div class="card" *ngFor="let i of trending"><app-testcard></app-testcard></div>
+  </div>
+</div>
