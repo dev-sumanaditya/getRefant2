@@ -42,16 +42,16 @@ export class PanelComponent implements OnInit {
       url: null,
       submenu: [
         {
-          name: 'Self',
-          url: 'love/'
+          name: 'Self Love',
+          url: 'love/self-love'
         },
         {
           name: 'Relationships',
-          url: 'love/'
+          url: 'love/relationships'
         },
         {
-          name: 'vacation',
-          url: 'love/'
+          name: 'Vacation',
+          url: 'love/vacations'
         }
       ]
     },
@@ -61,15 +61,15 @@ export class PanelComponent implements OnInit {
       submenu: [
         {
           name: 'Recipes',
-          url: 'food'
+          url: 'food/recipes'
         },
         {
           name: 'Meal Plans',
-          url: 'food'
+          url: 'food/meal-plans'
         },
         {
           name: 'Restaurant Reviews',
-          url: 'food'
+          url: 'food/restaurant-reviews'
         }
       ]
     },
@@ -118,6 +118,15 @@ export class PanelComponent implements OnInit {
     }
   }
 
+  openLogin() {
+    this.modalService.getModal('signupModal').close();
+    this.modalService.getModal('loginModal').open();
+  }
+
+  openSignup() {
+    this.modalService.getModal('loginModal').close();
+    this.modalService.getModal('signupModal').open();
+  }
 
 
 }

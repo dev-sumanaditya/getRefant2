@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-base',
@@ -36,9 +37,15 @@ export class BaseComponent implements OnInit {
   };
 
   public blogs = [1,1,1];
-  constructor() { }
+
+  public sub;
+  public routeData;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.sub = this.route
+      .data
+      .subscribe(v => this.routeData = v);
   }
 
 }

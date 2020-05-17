@@ -4,7 +4,10 @@ import { BaseComponent } from './base/base.component';
 
 
 const routes: Routes = [
-  {path: '', component: BaseComponent}
+  {path: 'self-love', component: BaseComponent, data: {name: 'Self Love'}},
+  {path: 'relationships', component: BaseComponent, data: {name: 'Relationships'}},
+  {path: 'vacations', component: BaseComponent, data: {name: 'Vacations'}},
+  {path: '', redirectTo: 'self-love'}
 ];
 
 @NgModule({
