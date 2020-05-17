@@ -21,73 +21,73 @@ export class PanelComponent implements OnInit {
     },
     {
       name: 'Live',
-      url: 'live',
+      url: null,
       submenu: [
         {
           name: 'Health & Fitness',
-          url: 'health-and-fitness'
+          url: 'live'
         },
         {
           name: 'Nutrition',
-          url: 'nutrition'
+          url: 'live'
         },
         {
           name: 'Pet Care',
-          url: 'pet-care'
+          url: 'live'
         }
       ]
     },
     {
       name: 'Love',
-      url: 'love',
+      url: null,
       submenu: [
         {
           name: 'Self',
-          url: 'self-love'
+          url: 'love/'
         },
         {
           name: 'Relationships',
-          url: 'relationships'
+          url: 'love/'
         },
         {
           name: 'vacation',
-          url: 'vacation'
+          url: 'love/'
         }
       ]
     },
     {
       name: 'Food',
-      url: 'food',
+      url: null,
       submenu: [
         {
           name: 'Recipes',
-          url: 'recipes'
+          url: 'food'
         },
         {
           name: 'Meal Plans',
-          url: 'meal-plans'
+          url: 'food'
         },
         {
           name: 'Restaurant Reviews',
-          url: 'restaurant-reviews'
+          url: 'food'
         }
       ]
     },
     {
       name: 'Learn',
-      url: 'learn',
+      url: null,
       submenu: [
         {
           name: 'Edu-cloud',
-          url: 'edu-cloud'
+          url: 'learn/edu-cloud'
         },
         {
           name: 'E-books',
-          url: 'e-books'
+          url: 'learn/e-books'
         },
         {
           name: 'E-tests',
-          url: 'e-tests'
+          url: 'learn/e-tests'
         }
       ]
     },

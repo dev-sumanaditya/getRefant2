@@ -53,12 +53,22 @@
         flex-direction: column;
         position: relative;
 
+        a {
+          text-transform: uppercase;
+          font-size: 14px;
+          opacity: 0.85;
+          font-weight: 600;
+          transition-duration: 0.4s;
+          text-decoration: none;
+          color: black;
+        }
         span {
           text-transform: uppercase;
           font-size: 14px;
           opacity: 0.85;
           font-weight: 600;
           transition-duration: 0.4s;
+          cursor: pointer;
         }
         .bar {
           height: 2px;

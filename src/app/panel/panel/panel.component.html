@@ -8,8 +8,9 @@
         <span>GetRefant</span>
       </a>
       <div class="navs" [class.positionNav]="showBrand">
-        <a href="{{item.url}}" class="navItem" *ngFor="let item of navmenu">
-          <span>{{item.name}}</span>
+        <a class="navItem" *ngFor="let item of navmenu">
+          <a *ngIf="item.url" href="{{item.url}}">{{item.name}}</a>
+          <span *ngIf="!item.url">{{item.name}}</span>
           <div class="bar"></div>
           <div class="dropmenu" *ngIf="item.submenu">
             <ul>
