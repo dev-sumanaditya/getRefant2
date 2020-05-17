@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-base',
   templateUrl: './base.component.html',
   styleUrls: ['./base.component.scss']
 })
-export class BaseComponent implements OnInit {
+export class BaseComponent implements OnInit, OnDestroy {
 
   public blgs = [2,2,2,3,3];
 
@@ -16,10 +17,19 @@ export class BaseComponent implements OnInit {
   ];
 
   public featured = [1,1];
+  public sub;
+  public routeData;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.sub = this.route
+      .data
+      .subscribe(v => this.routeData = v);
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 
 }

@@ -4,7 +4,10 @@ import { BaseComponent } from './base/base.component';
 
 
 const routes: Routes = [
-  {path: '', component: BaseComponent}
+  {path: 'pet-care', component: BaseComponent, data: {name: 'Pet Care'}},
+  {path: 'nutrition', component: BaseComponent, data: {name: 'Nutrition'}},
+  {path: 'health-and-fitness', component: BaseComponent, data: {name: 'Healthcare & Fitness'}},
+  {path: '', redirectTo: 'health-and-fitness'}
 ];
 
 @NgModule({

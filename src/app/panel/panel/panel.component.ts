@@ -25,15 +25,15 @@ export class PanelComponent implements OnInit {
       submenu: [
         {
           name: 'Health & Fitness',
-          url: 'live'
+          url: 'live/health-and-fitness'
         },
         {
           name: 'Nutrition',
-          url: 'live'
+          url: 'live/nutrition'
         },
         {
           name: 'Pet Care',
-          url: 'live'
+          url: 'live/pet-care'
         }
       ]
     },

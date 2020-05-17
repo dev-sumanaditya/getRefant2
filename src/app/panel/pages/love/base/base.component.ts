@@ -26,7 +26,7 @@ export class BaseComponent implements OnInit {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3300,
+    autoplaySpeed: 1300,
     dots: false,
     fade: true,
     pauseOnHover: false,
