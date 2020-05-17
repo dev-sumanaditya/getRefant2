@@ -1,0 +1,51 @@
+<div class="top">
+  <div class="wide">
+    <div class="slider">
+      <ngx-slick-carousel
+        class="ng-slider"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <div class="content">
+            <h1>Self Love</h1>
+            <h1>{{slide.name}}</h1>
+            <div class="flex-grow"></div>
+            <p>Read the story of Adam and how he overcame the fear of rejection.</p>
+            <strong>Continut reading <i class="fa fa-angle-double-right" aria-hidden="true"></i></strong>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>

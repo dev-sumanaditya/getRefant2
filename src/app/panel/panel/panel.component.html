@@ -1,6 +1,6 @@
 <div class="container">
   <div class="brandNav">
-    <h1>GetRefant</h1>
+    <a href="/">GetRefant</a>
   </div>
   <nav class="navbar p1">
     <div class="content">
@@ -8,25 +8,16 @@
         <span>GetRefant</span>
       </a>
       <div class="navs" [class.positionNav]="showBrand">
-        <a href="/" class="navItem">
-          <span>Home</span>
+        <a href="{{item.url}}" class="navItem" *ngFor="let item of navmenu">
+          <span>{{item.name}}</span>
           <div class="bar"></div>
-        </a>
-        <a href="/" class="navItem">
-          <span>Tests</span>
-          <div class="bar"></div>
-        </a>
-        <a href="/" class="navItem">
-          <span>Pricing</span>
-          <div class="bar"></div>
-        </a>
-        <a href="/" class="navItem">
-          <span>Blog</span>
-          <div class="bar"></div>
-        </a>
-        <a href="/" class="navItem">
-          <span>Contact</span>
-          <div class="bar"></div>
+          <div class="dropmenu" *ngIf="item.submenu">
+            <ul>
+              <li *ngFor="let sub of item.submenu">
+                <a href="{{item.url}}/{{sub.url}}" class="subnav">{{sub.name}}</a>
+              </li>
+            </ul>
+          </div>
         </a>
       </div>
       <div class="navs2">

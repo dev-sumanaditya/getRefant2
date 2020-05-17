@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+
+  .image{
+    width: 100%;
+    padding-top: 63%;
+    position: relative;
+    .img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('/assets/blogPage/girl2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .content {
+    padding: 10px;
+    p {
+      margin: 10px 0 5px 0;
+    }
+    .space {
+      height: 20px;
+    }
+    .more {
+      color: #ddd;
+    }
+
+  }
+  &:hover {
+    .more {
+      color: #7f00ff !important;
+    }
+  }
+}

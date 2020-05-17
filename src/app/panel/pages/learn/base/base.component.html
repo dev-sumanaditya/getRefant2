@@ -1,0 +1,48 @@
+<div class="top">
+  <div class="wide">
+    <ngx-slick-carousel
+        class="slider"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <div class="content p1 column">
+            <h1>Edu-Cloud</h1>
+            <p>Explore the new ultimate learning experience</p>
+            <div class="more">Start Exploring</div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+  </div>
+</div>
+
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>

@@ -58,6 +58,15 @@ a {
   display: flex;
   flex-direction: row;
 }
+.row-sm {
+  display: flex;
+  flex-direction: row;
+}
+.row-md {
+  display: flex;
+  flex-direction: row;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -76,4 +85,90 @@ a {
 }
 .flex5 {
   flex: 5;
+}
+.flex6 {
+  flex: 6;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.wide {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+//tooltip
+.tooltip {
+  position: relative;
+  display: inline-block;
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 8px;
+    transition-delay: 0.5s;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 130%;
+    left: 50%;
+    margin-left: -70px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+/* Tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .row-sm {
+    flex-direction: column;
+  }
+}
+
+
+/* tab/cellphone */
+@media (min-width: 481px) and (max-width: 767px) {
+  .row-sm {
+    flex-direction: column;
+  }
+  .row-md {
+    flex-direction: column;
+  }
+}
+
+/* Smartphone */
+@media (min-width: 320px) and (max-width: 480px) {
+  .row-sm {
+    flex-direction: column;
+  }
+  .row-md {
+    flex-direction: column;
+  }
 }

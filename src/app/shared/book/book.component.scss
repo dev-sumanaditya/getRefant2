@@ -1,0 +1,41 @@
+.ctr {
+  width: 100%;
+  position: relative;
+  padding-top: 133%;
+  background-color: #ddd;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  .item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('/assets/books/1.jpg');
+    background-size: cover;
+    cursor: pointer;
+    .cover {
+      height: 100%;
+      width: 100%;
+      transition-duration: 0.3s;
+      background: transparent;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      i {
+        font-size: 0px;
+        margin: 10px;
+        transition-duration: 0.5s;
+      }
+    }
+    &:hover {
+      .cover {
+        background: radial-gradient(circle, rgba(11,24,61,0.12566530029980745) 0%,rgba(11,24,61,0.12566530029980745) 0%, rgba(0,0,0,0.54723392775078779) 98%);
+        i {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

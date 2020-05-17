@@ -1,0 +1,78 @@
+<div class="top p1">
+  <div class="wide">
+    <h1>Explore Ebooks Collection</h1>
+    <div class="bar green-bg"></div>
+  </div>
+  <div class="wide">
+    <div class="nav row">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search E-books" spellcheck="false">
+      </div>
+      <div class="btns">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trending p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Trending Titles</strong></div>
+  </div>
+  <div class="wide row items">
+    <div class="item" *ngFor="let book of books">
+      <app-book (change)="emited($event)"></app-book>
+    </div>
+  </div>
+</div>
+
+<div class="trending p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some category</strong></div>
+  </div>
+  <div class="wide row items">
+    <div class="item" *ngFor="let book of books">
+      <app-book (change)="emited($event)"></app-book>
+    </div>
+  </div>
+</div>
+
+<div class="trending p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some category</strong></div>
+  </div>
+  <div class="wide row items">
+    <div class="item" *ngFor="let book of books">
+      <app-book (change)="emited($event)"></app-book>
+    </div>
+  </div>
+</div>
+
+<div class="download violet-bg p1" [class.showBar]="showbar">
+  <div class="wide row">
+    <div class="book">
+      <app-book></app-book>
+    </div>
+    <div class="des column">
+      <h4>Some Book Title</h4>
+      <small>Science Fiction | Author name</small>
+      <p>The book description includes just enough about what is going to happen in the book,</p>
+    </div>
+    <div class="flex-grow"></div>
+    <div class="btns row">
+      <div class="tooltip">
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+        <div class="tooltiptext">Read on Flippr</div>
+      </div>
+      <div class="tooltip">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <div class="tooltiptext">Download</div>
+      </div>
+      <div class="tooltip">
+        <i class="fa fa-close" aria-hidden="true" (click)="hidebar()"></i>
+        <div class="tooltiptext">Close</div>
+      </div>
+    </div>
+  </div>
+</div>

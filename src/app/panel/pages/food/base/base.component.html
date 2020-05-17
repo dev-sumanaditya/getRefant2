@@ -1,0 +1,44 @@
+<div class="top p1">
+  <div class="wide">
+    <div class="row-md">
+      <div class="flex1 l">
+        <img src="/assets/blogPage/11.jpg" alt="">
+      </div>
+      <div class="flex1 r">
+        <h1>Recipes</h1>
+        <div class="bar green-bg"></div>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer
+        </p>
+        <strong>Trending Recipes</strong>
+        <ul>
+          <li *ngFor="let i of trending">
+            <a href="" class="blue">{{i}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section p1">
+  <div class="wide">
+    <div class="head blue-bg"><strong>Some new section</strong></div>
+    <div class="row-md">
+      <div class="item" *ngFor="let x of blogs">
+        <app-blogcard></app-blogcard>
+      </div>
+    </div>
+  </div>
+</div>
